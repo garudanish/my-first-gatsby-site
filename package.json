@@ -15,6 +15,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/nanum-gothic-coding": "^4.5.3",
+    "@fontsource/noto-sans-kr": "^4.5.5",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^4.10.1",
