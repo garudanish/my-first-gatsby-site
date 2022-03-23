@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import "../styles/globals.scss";
 import "../styles/normalize.scss";
 import "../styles/reset.scss";
 import GlobalHeader from "./global-header";
