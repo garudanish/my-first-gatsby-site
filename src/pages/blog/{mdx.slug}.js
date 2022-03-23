@@ -3,8 +3,9 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MDXProvider } from "@mdx-js/react";
-import CodeBlock from "../../components/CodeBlock";
 import Layout from "../../components/layout";
+import "./{mdx.slug}.scss";
+import CodeBlock from "../../components/CodeBlock";
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
@@ -23,9 +24,11 @@ const BlogPost = ({ data }) => {
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>
       </p>
-      <MDXProvider components={{ pre: CodeBlock }}>
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
-      </MDXProvider>
+      <div className="post-content">
+        <MDXProvider components={{ pre: CodeBlock }}>
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </div>
     </Layout>
   );
 };
