@@ -1,0 +1,18 @@
+.prism-code {
+  padding: 1rem;
+  margin: 1em 0;
+  background-color: #fbfcfd;
+  font-family: D2Coding ligature, "Nanum Gothic Coding", monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  background-color: #e9ecef;
+  font-family: D2Coding ligature, "Nanum Gothic Coding", monospace;
+  font-size: 85%;
+  color: #212529;
+}

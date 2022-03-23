@@ -1,6 +1,7 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "../../node_modules/prism-react-renderer/themes/github";
+import { prismCode } from "./CodeBlock.module.css";
 
 const CodeBlock = ({ children }) => {
   // 언어를 찾기위한 과정
@@ -16,7 +17,7 @@ const CodeBlock = ({ children }) => {
       theme={theme}
     >
       {({ className, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className}>
+        <pre className={(className, prismCode)}>
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
