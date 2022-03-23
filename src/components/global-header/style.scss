@@ -1,0 +1,23 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 720px;
+  padding: 20px 10px;
+
+  &-left {
+    font-weight: 700;
+  }
+
+  .gnb {
+    &-link-list {
+      display: flex;
+    }
+
+    &-link-item {
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
